@@ -11,7 +11,7 @@ use 5.006;
 use strict;
 use vars qw($VERSION);
 
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 
 sub language {
@@ -24,7 +24,7 @@ sub language {
 sub parse {
 	my $self = shift;
 	
-	return %{$self->{result}};
+	return $self->{result};
 }
 
 
@@ -47,11 +47,11 @@ App::MultiLanguage - Multi-language support for applications
   # set the display language expected in application
   $object->language('zh-cn');
   
-  %words = $object->parse('categories','buy');
+  $words = $object->parse('categories','buy');
   
   # to access data
-  $words{'categories'}
-  $words{'buy'}
+  $words->{'categories'}
+  $words->{'buy'}
 
 =head1 DESCRIPTION
 

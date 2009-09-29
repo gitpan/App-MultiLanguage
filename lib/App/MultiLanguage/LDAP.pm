@@ -11,7 +11,7 @@ use 5.006;
 use strict;
 use vars qw($VERSION @ISA);
 
-$VERSION = '0.01';
+$VERSION = '0.02';
 @ISA     	= qw(App::MultiLanguage);
 
 use Carp;
@@ -167,10 +167,10 @@ The function 'parse' will return a hash. The keys would be the id you provided a
 Here is a quick example:
 
     @array = ('continue_shopping','categories','buy','landscape');
-    %words = $object->parse(@array);
+    $words = $object->parse(@array);
 
     # to access expecting language
-    $words{'categories'}
+    $words->{'categories'}
 
 =head1 EXAMPLES
 	

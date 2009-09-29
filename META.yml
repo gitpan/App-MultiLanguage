@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               App-MultiLanguage
-version:            0.01
+version:            0.02
 abstract:           Multi-language support for applications
 author:
     - Pan Yu <xiaocong[at]vip.163.com>
